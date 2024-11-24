@@ -4,8 +4,8 @@ import React from 'react'
 import map from '@/public/Map.png'
 export default function ConFormMap() {
   return (
-    <div className=" md:flex items-center justify-center md:w-10/12  mx-auto">
-      <div className="bg-[#adc9c9] shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row max-w-4xl border w-full">
+    <div className=" md:flex items-center justify-center md:w-10/12 border mx-auto">
+      <div className="bg-[#adc9c9]  md:flex">
         <div className="p-8 bg-[#adc9c9] flex-1">
           <h2 className="text-xl font-semibold mb-6">Connect with Our Team</h2>
           <form className="space-y-4">
@@ -49,14 +49,14 @@ export default function ConFormMap() {
             </li>
           </ul>
         </div>
-      </div>
-            {/* map image  */}
-            <div className='md:p-8 flex-1'>
+                    {/* map image  */}
+                    <div className=' flex-1 '>
       <Image
       src={map}
       alt="Picture of the author"
       className='md:p-3 rounded-lg'
     />
+      </div>
       </div>
     </div>
   )

@@ -7,6 +7,10 @@ import Contact from '@/public/contact.png'
 import Link
  from "next/link";
 import ConFormMap from "../Components/ContactPage/ConFormMap";
+import type { Metadata } from "next";
+export const metadata:Metadata={
+  title:'Contact page'
+}
 export default function Page(){
     return (
         <div>

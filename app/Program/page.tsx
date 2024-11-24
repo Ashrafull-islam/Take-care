@@ -8,6 +8,10 @@ import {lora} from '@/app/fonts';
 import {lexend} from '@/app/fonts';
 import Program from '@/public/Program.png'
 import Form from "../Components/Home/Form";
+import type { Metadata } from "next";
+export const metadata:Metadata={
+  title:'Program page'
+}
 export default function Page(){
     return(
         <div>
@@ -32,7 +36,7 @@ export default function Page(){
             </p>
             <p className={`${lexend.className} flex gap-1 items-center`}>
             <PiGreaterThan />
-            <Link href='/'>Programs</Link>
+            <Link href='/program_details'>Programs</Link>
             </p>
         </div>
         </div>

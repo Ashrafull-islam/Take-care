@@ -6,6 +6,10 @@ import {lexend} from '@/app/fonts';
 import bgAbout from '@/public/aboutbg.png';
 import Link from 'next/link';
 import AboutCard from '../Components/About/AboutCards';
+import type { Metadata } from 'next';
+export const metadata:Metadata={
+  title:'About page'
+};
 export default function Page(){
     return (
         <>
