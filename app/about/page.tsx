@@ -24,9 +24,9 @@ export default function Page(){
         </div>
         <div className="absolute inset-0 mt-80 text-[#263B3C] w-[80%]   mx-auto ">
         <div className="max-w-[950px] -mt-2">
-        <h1 className={`${lora.className} text-2xl md:text-7xl p-3 font-light `}>About us</h1>
+        <h1 className={`${lora.className} text-2xl md:text-7xl p-3 font-light`}>About us</h1>
         <div className='flex gap-2 '>
-            <p className={`${lexend.className} flex gap-2 items-center`}>
+            <p className={`${lexend.className} flex gap-2 items-center md:p-6`}>
             <IoHomeSharp />
             <Link href="/">Home</Link>
             </p>

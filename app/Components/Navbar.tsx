@@ -1,6 +1,7 @@
 import image from '@/public/images.png';
 import Link from "next/link";
 import Image from 'next/image'
+import BookModal from './BookModal/page';
 const NavBar = () => {
 
     const links=<>
@@ -25,7 +26,7 @@ const NavBar = () => {
 
     <div className="dropdown">
 
-      <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+      <div tabIndex={0} role="button" className="btn btn-ghost  lg:hidden">
 
         <svg
 
@@ -76,7 +77,21 @@ const NavBar = () => {
 
       {links}
 
-      <li className="bg-[#263B3C] text-white rounded-full"><Link href="/BookNow">Book now</Link></li>
+      <li className="bg-[#263B3C] text-white rounded-full">
+        {/* The button to open modal */}
+<label htmlFor="my_modal_6" className="">Book Now</label>
+
+{/* Put this part before </body> tag */}
+<input type="checkbox" id="my_modal_6" className="modal-toggle" />
+<div className="modal" role="dialog">
+  <div className="">
+      <BookModal></BookModal>
+    <div className="">
+      <label htmlFor="my_modal_6" className="btn ">Close!</label>
+    </div>
+  </div>
+</div>
+      </li>
 
     </ul>
 
