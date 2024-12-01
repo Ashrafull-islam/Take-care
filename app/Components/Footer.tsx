@@ -84,19 +84,21 @@ export default function Footer() {
           </div>
 
           {/* Subscription Form */}
-          <div className="flex flex-col items-center sm:items-start w-full sm:w-auto">
+          <div className="flex flex-col items-center sm:items-start w-full sm:w-auto p-2 rounded-lg bg-white border">
+            <div>
             <fieldset className="form-control w-full max-w-xs">
               <div className="join flex flex-col sm:flex-row gap-2">
                 <input
                   type="text"
                   placeholder="Enter Email Address"
-                  className="input input-bordered join-item px-4 py-2"
+                  className="input  join-item px-4 py-2"
                 />
-                <button className="btn btn-primary join-item px-6 py-2">
+                <button className="btn   px-6 py-2 bg-[#263B3C] text-white">
                   Subscribe
                 </button>
               </div>
             </fieldset>
+            </div>
           </div>
 
           {/* Social Media Links */}
@@ -108,9 +110,12 @@ export default function Footer() {
               </a>
               <FaSquareInstagram className="text-xl" />
             </div>
-          </div>         
+          </div>        
         </footer>
-        
+        <div className=" text-white mt-10 p-10">
+          <hr className=" border-t-2 w-[70%] mx-auto border-gray-200" />
+          <p className="text-center mt-10 opacity-80 font-thin text-sm leading-relaxed ">© Sojurn 2024, All rights reserved</p>
+        </div>
       </div>
     </div>
   );

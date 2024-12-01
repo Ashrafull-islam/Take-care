@@ -86,13 +86,9 @@ const NavBar = () => {
 <div className="modal" role="dialog">
   <div className="">
       <BookModal></BookModal>
-    <div className="">
-      <label htmlFor="my_modal_6" className="btn ">Close!</label>
-    </div>
   </div>
 </div>
       </li>
-
     </ul>
 
   </div>
@@ -102,7 +98,6 @@ const NavBar = () => {
         </div>
 
     );
-
 };
 
 
