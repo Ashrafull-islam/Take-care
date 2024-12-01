@@ -1,5 +1,6 @@
 import booksLady from '@/public/ladyBooks.png';
-import { lora, inter } from '@/app/fonts';
+import {lora} from '@/app/fonts';
+import {inter} from '@/app/fonts';
 import Link from 'next/link';
 import Image from "next/image";
 import Faq from './Faq';
