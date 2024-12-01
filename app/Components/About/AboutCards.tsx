@@ -52,12 +52,13 @@ export default function AboutCard(){
                     <div className="flex-1  flex ">
     <div className='h-[250px] md:px-4 '>
     <h2 className={`${lora.className} text-2xl md:text-4xl text-[#263B3C]`}>
-    A Mother's Insight
+    A Mother&apos;
+    s Insight
     </h2>
     <p
       className={`${lexend.className} mt-6 text-[#00000099] text-sm md:text-[20px] font-light`}
     >
-     Zena, a mother of four and a HypnoBirthing Australia certified practitioner, brings her personal journey and professional expertise to Sojourn. With a rich background in social sciences and as a NAATI accredited Arabic interpreter, Zena's approach is both inclusive and empowering.
+     Zena, a mother of four and a HypnoBirthing Australia certified practitioner, brings her personal journey and professional expertise to Sojourn. With a rich background in social sciences and as a NAATI accredited Arabic interpreter, Zena&apos;s approach is both inclusive and empowering.
     </p>
     </div>   
   </div>        
@@ -92,7 +93,7 @@ export default function AboutCard(){
     <p
       className={`${lexend.className} mt-6 text-[#00000099] text-sm md:text-[20px] font-light`}
     >
-      Sojourn envisions a world where every mother feels empowered, supported, and understood from pregnancy to parenting. We're growing to become a holistic hub for mothers, offering services that cater to every phase of motherhood. Join us on a journey of empowerment and support, tailored to meet the diverse needs of every mum.
+      Sojourn envisions a world where every mother feels empowered, supported, and understood from pregnancy to parenting. We&apos;re growing to become a holistic hub for mothers, offering services that cater to every phase of motherhood. Join us on a journey of empowerment and support, tailored to meet the diverse needs of every mum.
     </p>
     </div>   
   </div>        

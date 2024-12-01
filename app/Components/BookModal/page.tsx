@@ -13,7 +13,7 @@ const MotherInfo = () => (
       <input
         type="text"
         className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
-        placeholder="Enter mother's full name"
+        placeholder="Enter mothers full name"
       />
     </div>
     <div>
@@ -49,7 +49,7 @@ const PersonInfo = () => (
       <input
         type="text"
         className="w-full p-2 border rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
-        placeholder="Enter support person's name"
+        placeholder="Enter support persons name"
       />
     </div>
     <div>
@@ -216,7 +216,7 @@ export default function BookModal() {
 
       <div className="text-center space-y-4 bg-gray-50 p-6 rounded-lg border">
         <p className="text-sm text-gray-600 mx-auto max-w-sm">
-          Can't find a suitable day? Please send us an email to book a 1:1 programme.
+          Can&apos;t find a suitable day? Please send us an email to book a 1:1 programme.
         </p>
         <button className="px-8 py-3 rounded-xl bg-[#2F4F4F] text-white hover:bg-[#2F4F4F]/80">
           Email
@@ -232,7 +232,7 @@ export default function BookModal() {
       case 'support':
         return (
           <div className="p-6 overflow-y-auto max-h-[calc(100vh-200px)]">
-            <h2 className="text-xl font-semibold mb-6">Mother's Information</h2>
+            <h2 className="text-xl font-semibold mb-6">Mother&apos;s Information</h2>
             <MotherInfo />
           </div>
         );
