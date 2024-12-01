@@ -1,9 +1,7 @@
 'use client'
 import {lora} from '@/app/fonts';
 import {lexend} from '@/app/fonts';
-import { useState } from 'react'
-import { Brain, Users, Lightbulb, MessageCircle } from 'lucide-react'
-import Form from './Form';
+import { Brain, Users, Lightbulb } from 'lucide-react'
 
 export default function CardForm() {
   return (

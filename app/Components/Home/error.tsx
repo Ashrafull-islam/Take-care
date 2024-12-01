@@ -33,7 +33,7 @@ export default function Error({
             </div>
           </div>
           <p className="mt-6 text-base text-gray-500">
-            Don't worry, it's not you - it's us. We're working on fixing this!
+            Don&apos;t worry, it&apos;s not you - it&apos;s us. We&apos;re working on fixing this!
           </p>
           <p className="mt-2 text-sm text-gray-400">
             Error: {error.message || "Unknown error occurred"}

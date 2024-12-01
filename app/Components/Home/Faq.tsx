@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: "How can I track my order?",
-    answer: "Once your order is shipped, you will receive a confirmation email with a tracking number. You can use this number to track your package on our website or the carrier's site."
+    answer: "Once your order is shipped, you will receive a confirmation email with a tracking number. You can use this number to track your package on our website or the carriers site."
   },
   {
     question: "What payment methods do you accept?",

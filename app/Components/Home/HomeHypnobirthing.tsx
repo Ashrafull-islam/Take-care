@@ -38,7 +38,7 @@ export default function HomeHypnobirthing(){
         <IoIosPeople className='text-3xl md:text-6xl'/>
         <h2 className={`${lora.className}text-2xl md:text-4xl `}>Group Program</h2>
         </div>
-        <p className={`${lexend.className} font-light		 text-sm md:text-xl my-8 opacity-80	`}>Explore our Group Program, where shared experiences and collective wisdom enrich your journey to motherhood. Engaging with a supportive community, you’ll learn, grow, and prepare alongside others, for a confident, calm birth.</p>
+        <p className={`${lexend.className} font-light		 text-sm md:text-xl my-8 opacity-80	`}>Explore our Group Program, where shared experiences and collective wisdom enrich your journey to motherhood. Engaging with a supportive community, you&apos;ll learn, grow, and prepare alongside others, for a confident, calm birth.</p>
         </div>
             {/* One program  */}
             <div className='bg-[#E5EEEE]  border rounded-3xl flex-1 p-4 md:p-10'>
@@ -46,7 +46,7 @@ export default function HomeHypnobirthing(){
         <IoMdPeople className='text-3xl md:text-6xl' />
         <h2 className={`${lora.className}text-2xl md:text-4xl`}>One on one program</h2>
         </div>
-        <p className={`${lexend.className} font-light		 text-sm md:text-xl my-8 opacity-80 	`}>Join our personalized 1 on 1 program, designed to cater specifically to your unique birthing goals and concerns. Throughout our sessions, you'll receive personalised attention and guidance, ensuring you feel confident, informed, and ready to give birth.</p>
+        <p className={`${lexend.className} font-light		 text-sm md:text-xl my-8 opacity-80 	`}>Join our personalized 1 on 1 program, designed to cater specifically to your unique birthing goals and concerns. Throughout our sessions, you&apos;ll receive personalised attention and guidance, ensuring you feel confident, informed, and ready to give birth.</p>
         </div>
         </div>
 

@@ -2,7 +2,6 @@
 'use client'
 import React from "react";
 import {lora} from '@/app/fonts';
-import {lexend} from '@/app/fonts';
 import { useState } from 'react'
 
 export default function Form() {

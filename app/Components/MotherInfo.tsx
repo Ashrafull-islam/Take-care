@@ -53,7 +53,7 @@ export default function MotherInfo() {
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8">
         <form onSubmit={handleSubmit} className="space-y-8">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-serif text-[#2F4F4F] mb-4">Mother's Information</h1>
+            <h1 className="text-3xl font-serif text-[#2F4F4F] mb-4">Mother&apos;s Information</h1>
             <p className="text-sm text-gray-600 max-w-2xl mx-auto">
               Please complete the following form with your support person. Please note that all of your details will be kept private and confidential. These individual questions are there to truly serve your experience with us in an exceptional standard. If any details change, please inform your practitioner by sending us an update.
             </p>

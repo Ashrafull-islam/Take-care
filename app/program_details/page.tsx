@@ -4,7 +4,7 @@ import { PiGreaterThan } from "react-icons/pi";
 import {lora} from '@/app/fonts';
 import {lexend} from '@/app/fonts';
 // import { useState } from 'react';
-import { Instagram, Gift } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 import Image from 'next/image';
 import details1 from '@/public/details1.png'
 import details2 from '@/public/details.png'
@@ -114,7 +114,7 @@ export default function BirthProgram() {
 
                 <div>
                   <h3 className="font-medium">Ongoing Support from Your Practitioner:</h3>
-                  <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}> Beyond the classroom, you'll have continuous access to your practitioner for guidance, ensuring you feel supported every step of the way.</p>
+                  <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}> Beyond the classroom, you&apos;ll have continuous access to your practitioner for guidance, ensuring you feel supported every step of the way.</p>
                 </div>
 
                 <div>
@@ -124,10 +124,10 @@ export default function BirthProgram() {
 
                 <div>
                   <h3 className="font-medium">One-of-a-Kind Experience:</h3>
-                  <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}> This program is not just about preparation; it's an exclusive journey tailored to celebrate and empower your unique path to motherhood.</p>
+                  <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}> This program is not just about preparation; it&apos;s an exclusive journey tailored to celebrate and empower your unique path to motherhood.</p>
                 </div>
                 <div>
-                    <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>Embark on your journey to parenthood with Sojourn's Positive Birth Program, where we dedicate ourselves to making your birth experience as positive and empowering as possible.</p>
+                    <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>Embark on your journey to parenthood with Sojourn&apos;s Positive Birth Program, where we dedicate ourselves to making your birth experience as positive and empowering as possible.</p>
                 </div>
               </div>
             </div>

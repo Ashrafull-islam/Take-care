@@ -35,7 +35,7 @@ export default function AboutCard(){
     <p
       className={`${lexend.className} mt-6 text-[#00000099] text-sm md:text-[20px] font-light`}
     >
-      Sojourn's mission transcends traditional birthing education, aiming to
+      Sojourn &apos;s mission transcends traditional birthing education, aiming to
       be a sanctuary for mothers at any stage of their journey. From the
       transformative experience of hypnobirthing to the challenges and joys
       of early parenting, Our goal is to ensure no mother feels forgotten or

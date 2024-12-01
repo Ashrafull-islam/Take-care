@@ -44,7 +44,7 @@ export default function Page(){
       <div className="md:w-10/12  mx-auto md:my-1 md:mt-20">
       <div className="md:h-[150px] md:w-[650px] text-[#263B3C] text-center md:text-start">
         <h2 className={`${lora.className} text-center md:text-start text-3xl md:text-5xl p-3 font-light `}>Let us know how can help</h2>
-        <p className={`${lexend.className} flex gap-2 items-center p-3 text-[#263B3C]`}>Your inquiries are our priority, and we look forward to hearing from you. Connect with us today and let's make every interaction count!</p>
+        <p className={`${lexend.className} flex gap-2 items-center p-3 text-[#263B3C]`}>Your inquiries are our priority, and we look forward to hearing from you. Connect with us today and let&apos;s make every interaction count!</p>
       </div>
       </div>
       {/* form and map  */}
