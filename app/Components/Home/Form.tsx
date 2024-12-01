@@ -1,8 +1,7 @@
 
 'use client'
 import React from "react";
-import {lora} from '@/app/fonts';
-// import {inter} from '@/app/fonts';
+import {lora} from '@/app/fonts/page';
 import { useState } from 'react'
 
 export default function Form() {

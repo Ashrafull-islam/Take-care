@@ -4,8 +4,8 @@ import program1 from '@/public/program1.png'
 import program2 from '@/public/program2.png'
 import { IoHomeSharp } from "react-icons/io5";
 import { PiGreaterThan } from "react-icons/pi";
-import {lora} from '@/app/fonts';
-import {inter} from '@/app/fonts';
+import {lora} from '@/app/fonts/page';
+import {inter} from '@/app/fonts/page';
 import Program from '@/public/Program.png'
 import Form from "../Components/Home/Form";
 import type { Metadata } from "next";

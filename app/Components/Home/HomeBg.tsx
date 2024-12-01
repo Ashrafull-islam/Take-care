@@ -1,7 +1,7 @@
 import Image from "next/image";
 import BgHome from '@/public/home.png';
-import {lora} from '@/app/fonts';
-import {inter} from '@/app/fonts';
+import {lora} from '@/app/fonts/page';
+import {inter} from '@/app/fonts/page';
 import Link from "next/link";
 export default function HomeBg() {
   return (

@@ -1,5 +1,5 @@
-import {lora} from '@/app/fonts';
-import {inter} from '@/app/fonts';
+import {lora} from '@/app/fonts/page';
+import {inter} from '@/app/fonts/page';
 import Image from 'next/image';
 import card1 from '@/public/about-2.jpg'
 import card2 from '@/public/about-3.png'

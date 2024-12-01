@@ -1,11 +1,23 @@
-import type { NextConfig } from "next";
+// next.config.ts
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  eslint:{
-    ignoreDuringBuilds:true
+  reactStrictMode: true,
+
+  // Custom Webpack configuration (if needed)
+  webpack(config) {
+    // You can add custom webpack settings here
+    return config;
   },
+
+  // ESLint configuration to ignore during builds
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+
+  // Image domains allowed
   images: {
-    domains: ['i.ibb.co'], // Add the domain here
+    domains: ['i.ibb.co'], // Add your external domains here
   },
 };
 

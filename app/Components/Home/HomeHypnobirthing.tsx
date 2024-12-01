@@ -1,5 +1,5 @@
-import {lora} from '@/app/fonts';
-import {inter} from '@/app/fonts';
+import {lora} from '@/app/fonts/page';
+import {inter} from '@/app/fonts/page';
 import { IoIosPeople } from "react-icons/io";
 import { IoMdPeople } from "react-icons/io";
 import Image from 'next/image';

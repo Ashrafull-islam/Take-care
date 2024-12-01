@@ -1,6 +1,6 @@
 'use client'
-import {lora} from '@/app/fonts';
-import {inter} from '@/app/fonts';
+import {lora} from '@/app/fonts/page';
+import {inter} from '@/app/fonts/page';
 import React, { useState } from 'react'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 

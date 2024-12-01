@@ -1,8 +1,8 @@
 // 'use client';
 import { IoHomeSharp } from "react-icons/io5";
 import { PiGreaterThan } from "react-icons/pi";
-import {lora} from '@/app/fonts';
-import {inter} from '@/app/fonts';
+import {lora} from '@/app/fonts/page';
+import {inter} from '@/app/fonts/page';
 // import { useState } from 'react';
 import { Instagram } from 'lucide-react';
 import Image from 'next/image';
