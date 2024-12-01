@@ -2,7 +2,7 @@
 import { IoHomeSharp } from "react-icons/io5";
 import { PiGreaterThan } from "react-icons/pi";
 import {lora} from '@/app/fonts';
-import {lexend} from '@/app/fonts';
+import {inter} from '@/app/fonts';
 // import { useState } from 'react';
 import { Instagram } from 'lucide-react';
 import Image from 'next/image';
@@ -30,11 +30,11 @@ export default function BirthProgram() {
         <div className="max-w-[950px] -mt-2">
         <h1 className={`${lora.className} text-center md:text-start text-3xl md:text-7xl p-3 font-light `}>Program Details</h1>
         <div className='flex gap-2 justify-center md:justify-start md:p-6'>
-            <p className={`${lexend.className} flex gap-2 items-center`}>
+            <p className={`${inter.className} flex gap-2 items-center`}>
             <IoHomeSharp />
             <Link href="/">Home</Link>
             </p>
-            <p className={`${lexend.className} flex gap-1 items-center`}>
+            <p className={`${inter.className} flex gap-1 items-center`}>
             <PiGreaterThan />
             <Link href='/'>Program Details</Link>
             </p>
@@ -59,7 +59,7 @@ export default function BirthProgram() {
           <div className="space-y-6">
             <h1 className="text-3xl">1 on 1 Positive Birth Program</h1>
 
-            <p className={`${lexend.className} flex gap-2 items-center font-light p-3 text-[#263B3C]`}>
+            <p className={`${inter.className} flex gap-2 items-center font-light p-3 text-[#263B3C]`}>
               The Positive Birth Program will leave you feeling ready and equipped for your journey ahead. It combines pregnancy/childbirth education with HypnoBirthing tools and practices to give you a thorough and complete understanding of what you need to birth your baby with confidence and positivity. Having other pregnant women in the room to learn and practice with, means that you will experience a safe and supportive space, with plenty of room for laughter and lots of tears (of joy of course!). Book your spot in TODAY to avoid disappointment.
             </p>
 
@@ -69,65 +69,65 @@ export default function BirthProgram() {
               <div className="space-y-6">
                 <div>
                   <h3 className="font-medium">You Get the Practitioner to Yourself:</h3>
-                  <p className={`${lexend.className} flex gap-2 items-center font-light p-3 text-[#263B3C]`}>Enjoy the undivided attention of your experienced practitioner throughout the program, allowing for deep dives into your concerns and customisation of your birth preparation.</p>
+                  <p className={`${inter.className} flex gap-2 items-center font-light p-3 text-[#263B3C]`}>Enjoy the undivided attention of your experienced practitioner throughout the program, allowing for deep dives into your concerns and customisation of your birth preparation.</p>
                 </div>
 
                 <div>
                   <h3 className="font-medium">Two 6-Hour Sessions:</h3>
-                  <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>Split over two days, these sessions are packed with interactive learning, allowing ample time for discussion, practice, and personal attention, ensuring you leave feeling confident and prepared.</p>
+                  <p className={`${inter.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>Split over two days, these sessions are packed with interactive learning, allowing ample time for discussion, practice, and personal attention, ensuring you leave feeling confident and prepared.</p>
                 </div>
 
                 <div>
                   <h3 className="font-medium">Positive Birth Program Booklet:</h3>
-                  <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>A valuable resource provided during the class to complement your learning and serve as a reference for your bi-lightg journey.</p>
+                  <p className={`${inter.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>A valuable resource provided during the class to complement your learning and serve as a reference for your bi-lightg journey.</p>
                 </div>
 
                 <div>
                   <h3 className="font-medium">Refreshments:</h3>
-                  <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>To ensure you remain comfortable and focused throughout our sessions, refreshments will be provided.</p>
+                  <p className={`${inter.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>To ensure you remain comfortable and focused throughout our sessions, refreshments will be provided.</p>
                 </div>
 
                 <div>
                   <h3 className="font-medium">Affirmation Card Pack:</h3>
-                  <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>Receive a specially curated pack of affirmation cards, designed to inspire and empower you throughout your pregnancy and birth journey.</p>
+                  <p className={`${inter.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>Receive a specially curated pack of affirmation cards, designed to inspire and empower you throughout your pregnancy and birth journey.</p>
                 </div>
 
                 <div>
                   <h3 className="font-medium">Personalised Essential Oil Blend:</h3>
-                  <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>Benefit from a custom-blended essential oil, crafted just for you, to support relaxation and well-being during your birth preparation and beyond.</p>
+                  <p className={`${inter.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>Benefit from a custom-blended essential oil, crafted just for you, to support relaxation and well-being during your birth preparation and beyond.</p>
                 </div>
 
                 <div>
                   <h3 className="font-medium">Support Person Included:</h3>
-                  <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}> The program fee includes the participation of a support person, recognizing the importance of their role in the birthing process and ensuring they are equally prepared and informed.</p>
+                  <p className={`${inter.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}> The program fee includes the participation of a support person, recognizing the importance of their role in the birthing process and ensuring they are equally prepared and informed.</p>
                 </div>
 
                 <div>
                   <h3 className="font-medium">App Access:</h3>
-                  <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>Gain exclusive access to the HypnoBirthing app, filled with meditations, relaxation, and practical tools to enhance your pregnancy and birth experience.</p>
+                  <p className={`${inter.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>Gain exclusive access to the HypnoBirthing app, filled with meditations, relaxation, and practical tools to enhance your pregnancy and birth experience.</p>
                 </div>
 
                 <div>
                   <h3 className="font-medium">Exclusive Sojourn Products:</h3>
-                  <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}> Participants receive special Sojourn products designed to support relaxation and positive birth preparation, enhancing your program experience.</p>
+                  <p className={`${inter.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}> Participants receive special Sojourn products designed to support relaxation and positive birth preparation, enhancing your program experience.</p>
                 </div>
 
                 <div>
                   <h3 className="font-medium">Ongoing Support from Your Practitioner:</h3>
-                  <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}> Beyond the classroom, you&apos;ll have continuous access to your practitioner for guidance, ensuring you feel supported every step of the way.</p>
+                  <p className={`${inter.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}> Beyond the classroom, you&apos;ll have continuous access to your practitioner for guidance, ensuring you feel supported every step of the way.</p>
                 </div>
 
                 <div>
                   <h3 className="font-medium">Extra Small Goodies: </h3>
-                  <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>Delight in a selection of carefully chosen extras that make a significant impact on your comfort and readiness for motherhood.</p>
+                  <p className={`${inter.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>Delight in a selection of carefully chosen extras that make a significant impact on your comfort and readiness for motherhood.</p>
                 </div>
 
                 <div>
                   <h3 className="font-medium">One-of-a-Kind Experience:</h3>
-                  <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}> This program is not just about preparation; it&apos;s an exclusive journey tailored to celebrate and empower your unique path to motherhood.</p>
+                  <p className={`${inter.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}> This program is not just about preparation; it&apos;s an exclusive journey tailored to celebrate and empower your unique path to motherhood.</p>
                 </div>
                 <div>
-                    <p className={`${lexend.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>Embark on your journey to parenthood with Sojourn&apos;s Positive Birth Program, where we dedicate ourselves to making your birth experience as positive and empowering as possible.</p>
+                    <p className={`${inter.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>Embark on your journey to parenthood with Sojourn&apos;s Positive Birth Program, where we dedicate ourselves to making your birth experience as positive and empowering as possible.</p>
                 </div>
               </div>
             </div>

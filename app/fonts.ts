@@ -1,7 +1,7 @@
 // app/fonts/index.ts
 import { Inter, Lora } from 'next/font/google';
 
-export const lexend = Inter({
+export const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
 });

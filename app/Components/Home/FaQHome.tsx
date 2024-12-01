@@ -1,5 +1,5 @@
 import booksLady from '@/public/ladyBooks.png';
-import { lora, lexend } from '@/app/fonts';
+import { lora, inter } from '@/app/fonts';
 import Link from 'next/link';
 import Image from "next/image";
 import Faq from './Faq';
@@ -23,24 +23,24 @@ export default function FaQHome() {
           {/* Text Section */}
           <div>
             <h2 className={`${lora.className}text-2xl text-center md:text-start my-2 md:my-0 md:text-5xl`}>Meet Your Practitioner</h2>
-            <p className={`${lexend.className} p-4 md:p-0 my-1 md:my-6 text-[14px] md:text-[18px] opacity-70`}>
+            <p className={`${inter.className} p-4 md:p-0 my-1 md:my-6 text-[14px] md:text-[18px] opacity-70`}>
               As a mother of four and a Hypnobirthing Australia certified practitioner, I've
               personally witnessed the transformative power of a positive birthing experience.
               My passion is fuelled by a desire to ensure every woman has access to the
               knowledge and support needed for a fulfilling birth, drawing from my own diverse
               experiences across the spectrum of childbirth.
             </p>
-            <p className={`${lexend.className} p-4 md:p-0 my-1 md:my-6 text-[14px] md:text-[18px] opacity-70`}>
+            <p className={`${inter.className} p-4 md:p-0 my-1 md:my-6 text-[14px] md:text-[18px] opacity-70`}>
               I leverage my skills and experience to make Hypnobirthing accessible to all
               women, aiming to empower them to understand and embrace the principles of the
               Positive Birth Program.
             </p>
-            <p className={`${lexend.className} p-4 md:p-0 my-1 md:mb-6 text-[14px] md:text-[18px] opacity-70`}>
+            <p className={`${inter.className} p-4 md:p-0 my-1 md:mb-6 text-[14px] md:text-[18px] opacity-70`}>
               I believe in the right of every woman to fully experience her body and for every
               baby to enter the world in a calm and gentle manner.
             </p>
-            <p className={`${lexend.className} p-4 md:p-0 text-center md:text-start text-[14px] md:text-[18px] opacity-70`}>Your Birth Guide.</p>
-            <p className={`${lexend.className} p-4 md:p-0 text-[14px] text-center md:text-start md:mb-10 md:text-[18px] opacity-70`}>Zena Kreidli</p>
+            <p className={`${inter.className} p-4 md:p-0 text-center md:text-start text-[14px] md:text-[18px] opacity-70`}>Your Birth Guide.</p>
+            <p className={`${inter.className} p-4 md:p-0 text-[14px] text-center md:text-start md:mb-10 md:text-[18px] opacity-70`}>Zena Kreidli</p>
 
             
             <Link 

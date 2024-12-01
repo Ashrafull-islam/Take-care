@@ -1,6 +1,6 @@
 'use client'
 import {lora} from '@/app/fonts';
-import {lexend} from '@/app/fonts';
+import {inter} from '@/app/fonts';
 import { Brain, Users, Lightbulb } from 'lucide-react'
 
 export default function CardForm() {
@@ -16,7 +16,7 @@ export default function CardForm() {
                 <Lightbulb className="w-8 h-8 text-[#4A90E2]" />
               </div>
               <h3 className={`${lora.className} text-xl font-semibold mb-4`}>Know Your Options</h3>
-              <p className={`${lexend.className} text-gray-600 text-sm opacity-80`}>
+              <p className={`${inter.className} text-gray-600 text-sm opacity-80`}>
                 Gain the confidence to navigate your birth journey with informed choices, understanding your options for a truly empowered and personalized birthing experience, tailored to your needs and preferences.
               </p>
             </div>
@@ -29,7 +29,7 @@ export default function CardForm() {
                 <Brain className="w-8 h-8 text-[#4A90E2]" />
               </div>
               <h3 className={`${lora.className} text-xl font-semibold mb-4`}>Calm Your Mind</h3>
-              <p className={`${lexend.className} text-gray-600 text-sm opacity-80`}>
+              <p className={`${inter.className} text-gray-600 text-sm opacity-80`}>
                 Learn powerful relaxation and stress-management techniques to foster a tranquil, positive birthing environment, minimizing discomfort for both mother and baby, ensuring a positive experience.
               </p>
             </div>
@@ -42,7 +42,7 @@ export default function CardForm() {
                 <Users className="w-8 h-8 text-[#4A90E2]" />
               </div>
               <h3 className={`${lora.className} text-xl font-semibold mb-4`}>Prepare Your Partner</h3>
-              <p className={`${lexend.className} text-gray-600 text-sm opacity-80`}>
+              <p className={`${inter.className} text-gray-600 text-sm opacity-80`}>
                 Equip your support person with the knowledge and tools needed to provide effective support, strengthening your connection and teamwork through the birthing process, for a more unified experience.
               </p>
             </div>

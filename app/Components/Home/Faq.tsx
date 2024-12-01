@@ -1,6 +1,6 @@
 'use client'
 import {lora} from '@/app/fonts';
-import {lexend} from '@/app/fonts';
+import {inter} from '@/app/fonts';
 import React, { useState } from 'react'
 import { ChevronDown, ChevronUp } from 'lucide-react'
 
@@ -54,7 +54,7 @@ export default function Faq() {
               </button>
               {openIndex === index && (
                 <div className="mt-2 p-4 text-[#263B3C] w-full bg-white rounded-lg shadow-md">
-                  <p className={`${lexend.className} text-[#263B3C] opacity-80`}>{faq.answer}</p>
+                  <p className={`${inter.className} text-[#263B3C] opacity-80`}>{faq.answer}</p>
                 </div>
               )}
             </div>

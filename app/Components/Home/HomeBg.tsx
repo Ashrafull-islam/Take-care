@@ -1,7 +1,7 @@
 import Image from "next/image";
 import BgHome from '@/public/home.png';
 import {lora} from '@/app/fonts';
-import {lexend} from '@/app/fonts';
+import {inter} from '@/app/fonts';
 import Link from "next/link";
 export default function HomeBg() {
   return (
@@ -27,7 +27,7 @@ export default function HomeBg() {
         <h1 className={`${lora.className} text-2xl md:text-7xl p-3 font-light	 tracking-wide  leading-relaxed`}>
   Hypnobirthing Classes for a Calm, Confident Birth
   </h1>
-  <p className={`${lexend.className} text-[12px]   md:text-xl	 md:my-6 md:p-4 font-light	 opacity-90  `}>Our Hypnobirthing classes at Sojourn are founded on the belief that every woman deserves to experience her body fully, and every baby deserves to be received calmly and gently. We empower women for a tranquil birthing experience.</p>
+  <p className={`${inter.className} text-[12px]   md:text-xl	 md:my-6 md:p-4 font-light	 opacity-90  `}>Our Hypnobirthing classes at Sojourn are founded on the belief that every woman deserves to experience her body fully, and every baby deserves to be received calmly and gently. We empower women for a tranquil birthing experience.</p>
   <p className="mt-6">
   <Link className="bg-[#263B3C] text-white rounded-full py-4 px-8 my-3 " href="/">Learn more</Link>
   </p>

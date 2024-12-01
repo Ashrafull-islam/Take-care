@@ -1,5 +1,5 @@
 import {lora} from '@/app/fonts';
-import {lexend} from '@/app/fonts';
+import {inter} from '@/app/fonts';
 import Image from 'next/image';
 import card1 from '@/public/about-2.jpg'
 import card2 from '@/public/about-3.png'
@@ -13,7 +13,7 @@ export default function AboutCard(){
             {/* text-section  */}
             <div className='text-center p-4 md:p-20'>
             <h2 className={`${lora.className} text-2xl md:text-5xl  text-[#263B3C]`}>Empowering Mothers, Building Community</h2>
-            <p className={`${lexend.className}  my-10   text-[#00000099] text-sm md:text-[20px] font-light	 text-center`}>The Positive Birth Program is a combination of pregnancy/birth education and HypnoBirthing. Most women in the modern world have been led to believe that pregnancy and birth are to be feared, leading the process to become unnecessarily medicalized at certain times.</p>
+            <p className={`${inter.className}  my-10   text-[#00000099] text-sm md:text-[20px] font-light	 text-center`}>The Positive Birth Program is a combination of pregnancy/birth education and HypnoBirthing. Most women in the modern world have been led to believe that pregnancy and birth are to be feared, leading the process to become unnecessarily medicalized at certain times.</p>
             </div>
             {/* Cards section  */}
             <div className="">
@@ -33,7 +33,7 @@ export default function AboutCard(){
       Our Mission: A Sanctuary for Mothers
     </h2>
     <p
-      className={`${lexend.className} mt-6 text-[#00000099] text-sm md:text-[20px] font-light`}
+      className={`${inter.className} mt-6 text-[#00000099] text-sm md:text-[20px] font-light`}
     >
       Sojourn &apos;s mission transcends traditional birthing education, aiming to
       be a sanctuary for mothers at any stage of their journey. From the
@@ -56,7 +56,7 @@ export default function AboutCard(){
     s Insight
     </h2>
     <p
-      className={`${lexend.className} mt-6 text-[#00000099] text-sm md:text-[20px] font-light`}
+      className={`${inter.className} mt-6 text-[#00000099] text-sm md:text-[20px] font-light`}
     >
      Zena, a mother of four and a HypnoBirthing Australia certified practitioner, brings her personal journey and professional expertise to Sojourn. With a rich background in social sciences and as a NAATI accredited Arabic interpreter, Zena&apos;s approach is both inclusive and empowering.
     </p>
@@ -91,7 +91,7 @@ export default function AboutCard(){
     With You at Every Step of Motherhood
     </h2>
     <p
-      className={`${lexend.className} mt-6 text-[#00000099] text-sm md:text-[20px] font-light`}
+      className={`${inter.className} mt-6 text-[#00000099] text-sm md:text-[20px] font-light`}
     >
       Sojourn envisions a world where every mother feels empowered, supported, and understood from pregnancy to parenting. We&apos;re growing to become a holistic hub for mothers, offering services that cater to every phase of motherhood. Join us on a journey of empowerment and support, tailored to meet the diverse needs of every mum.
     </p>
@@ -108,7 +108,7 @@ export default function AboutCard(){
     What to expect from our programs
     </h2>
     <p
-      className={`${lexend.className} mt-6  text-[#00000099] text-sm md:text-[20px] font-light`}
+      className={`${inter.className} mt-6  text-[#00000099] text-sm md:text-[20px] font-light`}
     >
         The Sojourn Positive Birth Program includes 12 hours of personalised tuition, a comprehensive Positive Birth Program Booklet, refreshments for comfort, and extensive online resources, practice videos, and more. Participants also benefit from ongoing support from their dedicated practitioner, ensuring a well-supported journey to parenthood.
     </p>
