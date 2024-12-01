@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { IoHomeSharp } from "react-icons/io5";
 import { PiGreaterThan } from "react-icons/pi";
 import {lora} from '@/app/fonts';
-import {lexend} from '@/app/fonts';
+import {inter} from '@/app/fonts';
 import bgAbout from '@/public/aboutbg.png';
 import Link from 'next/link';
 import AboutCard from '../Components/About/AboutCards';
@@ -26,11 +26,11 @@ export default function Page(){
         <div className="max-w-[950px] -mt-2">
         <h1 className={`${lora.className} text-2xl md:text-7xl p-3 font-light`}>About us</h1>
         <div className='flex gap-2 '>
-            <p className={`${lexend.className} flex gap-2 items-center md:p-6`}>
+            <p className={`${inter.className} flex gap-2 items-center md:p-6`}>
             <IoHomeSharp />
             <Link href="/">Home</Link>
             </p>
-            <p className={`${lexend.className} flex gap-1 items-center`}>
+            <p className={`${inter.className} flex gap-1 items-center`}>
             <PiGreaterThan />
             <Link href='/'>About</Link>
             </p>
