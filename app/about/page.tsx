@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { IoHomeSharp } from "react-icons/io5";
 import { PiGreaterThan } from "react-icons/pi";
-import {lora} from '@/app/fonts/page';
-import {inter} from '@/app/fonts/page';
+import {lora} from '@/app/layout';
+import {inter} from '@/app/layout';
 import bgAbout from '@/public/aboutbg.png';
 import Link from 'next/link';
 import AboutCard from '../Components/About/AboutCards';

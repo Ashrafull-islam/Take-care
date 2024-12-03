@@ -1,8 +1,8 @@
 // 'use client';
 import { IoHomeSharp } from "react-icons/io5";
 import { PiGreaterThan } from "react-icons/pi";
-import {lora} from '@/app/fonts/page';
-import {inter} from '@/app/fonts/page';
+import {lora} from '@/app/layout';
+import {inter} from '@/app/layout';
 // import { useState } from 'react';
 import { Instagram } from 'lucide-react';
 import Image from 'next/image';
@@ -74,7 +74,7 @@ export default function BirthProgram() {
 
                 <div>
                   <h3 className="font-medium">Two 6-Hour Sessions:</h3>
-                  <p className={`${inter.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>Split over two days, these sessions are packed with interactive learning, allowing ample time for discussion, practice, and personal attention, ensuring you leave feeling confident and prepared.</p>
+                  <p className={`${inter.className} flex gap-2 items-center p-3 font-light text-[#263B3C]`}>Split over two days, these sessions are packed with interaclassNamerning, allowing ample time for discussion, practice, and personal attention, ensuring you leave feeling confident and prepared.</p>
                 </div>
 
                 <div>

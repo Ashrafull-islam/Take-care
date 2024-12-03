@@ -1,6 +1,6 @@
 'use client'
-import {lora} from '@/app/fonts/page';
-import {inter} from '@/app/fonts/page';
+import {lora} from '@/app/layout';
+import {inter} from '@/app/layout';
 import { Brain, Users, Lightbulb } from 'lucide-react'
 
 export default function CardForm() {

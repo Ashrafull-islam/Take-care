@@ -1,42 +1,38 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
+
 import "./globals.css";
 import NavBar from "./Components/Navbar";
 import ContactNav from "./Components/ContactNav";
 import Footer from "./Components/Footer";
+import { Inter,Lora  } from "next/font/google";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+
+export const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  // variable: "--font-inter",
 });
 
-export const metadata: Metadata = {
-  title: "Take care",
-  description: "Generated sojourn",
-};
+export const lora = Lora({
+  subsets: ["latin"],
+  display: "swap",
+  // variable: "--font-lora",
+});
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className={`${inter.className} ${lora.className}`}>
+      <body>
         <div>
-        <ContactNav></ContactNav>
-        <NavBar></NavBar>
+          <ContactNav />
+          <NavBar />
         </div>
         {children}
-        <Footer></Footer>
+        <Footer />
       </body>
     </html>
   );

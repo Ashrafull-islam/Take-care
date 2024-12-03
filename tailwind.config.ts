@@ -8,11 +8,11 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        sans: ['var(--font-inter)'], // Inter for sans-serif
+        serif: ['var(--font-lora)'], // Lora for serif
       },
     },
   },
-  plugins: [require('daisyui'),],
+  plugins: [require('daisyui')],
 } satisfies Config;

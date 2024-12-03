@@ -1,5 +1,5 @@
-import {lora} from '@/app/fonts/page';
-import {inter} from '@/app/fonts/page';
+import {lora} from '@/app/layout';
+import {inter} from '@/app/layout';
 import Image from 'next/image';
 import card1 from '@/public/about-2.jpg'
 import card2 from '@/public/about-3.png'
@@ -58,7 +58,7 @@ export default function AboutCard(){
     <p
       className={`${inter.className} mt-6 text-[#00000099] text-sm md:text-[20px] font-light`}
     >
-     Zena, a mother of four and a HypnoBirthing Australia certified practitioner, brings her personal journey and professional expertise to Sojourn. With a rich background in social sciences and as a NAATI accredited Arabic interpreter, Zena&apos;s approach is both inclusive and empowering.
+     Zena, a mother of four and a HypnoBirthing Australia certified practitioner, brings her personal journey and professional expertise to Sojourn. With a rich background in social sciences and as a NAATI accredited Arabic interpclassNamena&apos;s approach is both inclusive and empowering.
     </p>
     </div>   
   </div>        

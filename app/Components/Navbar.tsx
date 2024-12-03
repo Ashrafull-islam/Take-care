@@ -2,6 +2,7 @@ import image from '@/public/images.png';
 import Link from "next/link";
 import Image from 'next/image'
 import BookModal from './BookModal/page';
+import {lora} from '@/app/layout';
 const NavBar = () => {
 
     const links=<>
@@ -58,7 +59,7 @@ const NavBar = () => {
 
         tabIndex={0}
 
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        className={` menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow `}>
 
        {links}
 
@@ -73,7 +74,7 @@ const NavBar = () => {
 
   <div className="navbar-end hidden lg:flex">
 
-    <ul className="menu menu-horizontal px-1">
+    <ul className={` menu menu-horizontal px-1 `}>
 
       {links}
 

@@ -1,6 +1,6 @@
 import booksLady from '@/public/ladyBooks.png';
-import {lora} from '@/app/fonts/page';
-import {inter} from '@/app/fonts/page';
+import {lora} from '@/app/layout';
+import {inter} from '@/app/layout';
 import Link from 'next/link';
 import Image from "next/image";
 import Faq from './Faq';
@@ -23,7 +23,7 @@ export default function FaQHome() {
 
           {/* Text Section */}
           <div>
-            <h2 className={`${lora.className}text-2xl text-center md:text-start my-2 md:my-0 md:text-5xl`}>Meet Your Practitioner</h2>
+            <h2  className={`${lora.className} text-2xl  text-center mb-8 text-[#263B3C] md:text-start my-2 md:my-0 md:text-5xl`}>Meet Your Practitioner</h2>
             <p className={`${inter.className} p-4 md:p-0 my-1 md:my-6 text-[14px] md:text-[18px] opacity-70`}>
               As a mother of four and a Hypnobirthing Australia certified practitioner, I've
               personally witnessed the transformative power of a positive birthing experience.

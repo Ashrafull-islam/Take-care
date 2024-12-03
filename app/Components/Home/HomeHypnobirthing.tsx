@@ -1,5 +1,5 @@
-import {lora} from '@/app/fonts/page';
-import {inter} from '@/app/fonts/page';
+import {lora} from '@/app/layout';
+import {inter} from '@/app/layout';
 import { IoIosPeople } from "react-icons/io";
 import { IoMdPeople } from "react-icons/io";
 import Image from 'next/image';
@@ -36,7 +36,7 @@ export default function HomeHypnobirthing(){
         <div className='bg-[#E5EEEE] border rounded-3xl flex-1 p-4 md:p-10'>
         <div className='flex gap-2 items-center'>
         <IoIosPeople className='text-3xl md:text-6xl'/>
-        <h2 className={`${lora.className}text-2xl md:text-4xl `}>Group Program</h2>
+        <h2 className={`${lora.className} text-2xl md:text-4xl`} >Group Program</h2>
         </div>
         <p className={`${inter.className} font-light		 text-sm md:text-xl my-8 opacity-80	`}>Explore our Group Program, where shared experiences and collective wisdom enrich your journey to motherhood. Engaging with a supportive community, you&apos;ll learn, grow, and prepare alongside others, for a confident, calm birth.</p>
         </div>
@@ -44,7 +44,7 @@ export default function HomeHypnobirthing(){
             <div className='bg-[#E5EEEE]  border rounded-3xl flex-1 p-4 md:p-10'>
         <div className='flex gap-2 items-center'>
         <IoMdPeople className='text-3xl md:text-6xl' />
-        <h2 className={`${lora.className}text-2xl md:text-4xl`}>One on one program</h2>
+        <h2 className={`${lora.className} text-2xl md:text-4xl`}>One on one program</h2>
         </div>
         <p className={`${inter.className} font-light		 text-sm md:text-xl my-8 opacity-80 	`}>Join our personalized 1 on 1 program, designed to cater specifically to your unique birthing goals and concerns. Throughout our sessions, you&apos;ll receive personalised attention and guidance, ensuring you feel confident, informed, and ready to give birth.</p>
         </div>
