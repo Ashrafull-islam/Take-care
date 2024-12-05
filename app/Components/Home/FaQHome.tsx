@@ -10,21 +10,12 @@ export default function FaQHome() {
   return (
     <div className="bg-[#E5EEEE] text-[#263B3C]">
       <div className="md:w-10/12 mx-auto">
-        <div className="md:flex md:p-28 md:gap-10  md:h-[834px]">
-          {/* Image Container */}
-          <div className="md:relative md:w-[3500px] md:h-[850px] md:mx-auto">
-            <Image
-              className="rounded-3xl"
-              src={booksLady}
-              alt="Picture of the author"
-              style={{ objectFit: "cover" }}
-            />
-          </div>
+        <div className="md:flex md:flex-row-reverse md:p-28 md:gap-10 justify-center md:h-[834px]">
 
           {/* Text Section */}
           <div>
-            <h2  className={`${lora.className} text-2xl  text-center mb-8 text-[#263B3C] md:text-start my-2 md:my-0 md:text-5xl`}>Meet Your Practitioner</h2>
-            <p className={`${inter.className} p-4 md:p-0 my-1 md:my-6 text-[14px] md:text-[18px] opacity-70`}>
+            <h2  className={`${lora.className} text-2xl p-4  mb-8 text-[#263B3C] text-start my-2 md:my-0 md:text-[48px] leading-9`}>Meet Your Practitioner</h2>
+            <p className={`${inter.className} p-4 md:p-0 my-0 md:my-6 text-[14px] md:text-[18px] opacity-70 leading-8	`}>
               As a mother of four and a Hypnobirthing Australia certified practitioner, I've
               personally witnessed the transformative power of a positive birthing experience.
               My passion is fuelled by a desire to ensure every woman has access to the
@@ -40,23 +31,37 @@ export default function FaQHome() {
               I believe in the right of every woman to fully experience her body and for every
               baby to enter the world in a calm and gentle manner.
             </p>
-            <p className={`${inter.className} p-4 md:p-0 text-center md:text-start text-[14px] md:text-[18px] opacity-70`}>Your Birth Guide.</p>
-            <p className={`${inter.className} p-4 md:p-0 text-[14px] text-center md:text-start md:mb-10 md:text-[18px] opacity-70`}>Zena Kreidli</p>
+            <p className={`${inter.className} p-4 md:p-0  md:text-start text-[14px] md:text-[18px] opacity-70`}>Your Birth Guide.</p>
+            <p className={`${inter.className} p-4 md:p-0 text-[14px] md:text-start md:mb-4 md:text-[18px] opacity-70`}>Zena Kreidli</p>
 
-            
+            <p className='p-3 md:p-0'>
             <Link 
-        className="bg-[#263B3C] hidden md:inline-block text-white rounded-full px-8 py-5 mx-auto" 
+        className="bg-[#263B3C] text-sm md:text-xl   md:inline-block text-white rounded-full px-8 py-4 mx-auto" 
      href="/"
         >
     Learn More
         </Link>
+            </p>
+
       
           </div>
+         {/* Image Container */}
+         <div className="p-3 my-2 md:relative md:w-[3500px] md:h-[880px] md:mx-auto">
+            <Image
+              className="rounded-3xl"
+              src={booksLady}
+              alt="Picture of the author"
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+
         </div>
         {/* faq section  */}
         <Faq></Faq>
         {/* card section  */}
+        <div className='w-[91%] mx-auto'>
         <CardForm></CardForm>
+        </div>
       </div>
     </div>
   );

@@ -8,9 +8,9 @@ import Card3 from '@/public/about-8.png'
 export default function MiracleCards() {
 
   return (
-    <div className="p-4 md:p-10">
-        <h2 className={`${lora.className} text-2xl md:text-5xl font-semibold text-center my-2 md:my-20 text-[#263B3C]`}>Path to Parenthood Resources</h2>
-      <div className="grid md:grid-cols-3 gap-8">
+    <div className="p-4 md:p-0">
+        <h2 className={`${lora.className} text-2xl md:text-[39px] leading-9	 font-semibold text-center my-5  text-[#263B3C]`}>Path to Parenthood Resources</h2>
+      <div className="grid md:grid-cols-3 gap-10 my-8">
             {/* Card 1  */}
           <div className="bg-[#E5EEEE] md:w-[400px] rounded-b-ld shadow-md overflow-hidden ">
             <Image
@@ -21,10 +21,10 @@ export default function MiracleCards() {
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
-              <p className="text-xl text-gray-500">Birth stories</p>
-              <h2 className={`${lora.className} text-xl md:text-2xl  text-[#263B3C]`}>Celebrating Little Miracles</h2>
-              <p className={`${inter.className}  mt-8 text-[#00000099] text-sm md:text-[20px] font-light`}>Every birth is a testament to the miracles that unfold within our walls. Whether it&apos;s the joyous arrival of a tiny explorer born in the comfort of a home.</p>
-              <p className=" text-gray-500 mt-4 font-semibold">date: &apos;22-04-2023</p>
+              <p className="text-[14px] leading-5 text-[#000000B2]">Birth stories</p>
+              <h2 className={`${lora.className} text-xl md:text-[25px] leading-7	  text-[#000000] mt-2`}>Celebrating Little Miracles</h2>
+              <p className={`${inter.className}  mt-8 text-[#00000099] text-sm md:text-[14px] leading-6	`}>Every birth is a testament to the miracles that unfold within our walls. Whether it&apos;s the joyous arrival of a tiny explorer born in the comfort of a home.</p>
+              <p className=" text-[#000000B2] text-[14px] leading-5 mt-4 font-semibold">date: &apos;22-04-2023</p>
             </div>
           </div>
         {/* Card 2 */}
@@ -37,10 +37,10 @@ export default function MiracleCards() {
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
-              <p className="text-xl text-gray-500">Birth stories</p>
-              <h2 className={`${lora.className} text-xl md:text-2xl  text-[#263B3C] mt-2`}>Celebrating Little Miracles</h2>
-              <p className={`${inter.className}  mt-8 text-[#00000099] text-sm md:text-[20px] font-light`}>Every birth is a testament to the miracles that unfold within our walls. Whether it&apos;s the joyous arrival of a tiny explorer born in the comfort of a home.</p>
-              <p className=" text-gray-500 mt-4 font-semibold">date: &apos; 22-04-2023</p>
+              <p className="text-[14px] leading-5	 text-[#000000B2]">Birth stories</p>
+              <h2 className={`${lora.className} text-xl md:text-[25px] leading-7	  text-[#000000] mt-2`}>Celebrating Little Miracles</h2>
+              <p className={`${inter.className}  mt-8 text-[#00000099] text-sm md:text-[14px] leading-6`}>Every birth is a testament to the miracles that unfold within our walls. Whether it&apos;s the joyous arrival of a tiny explorer born in the comfort of a home.</p>
+              <p className=" text-[#000000B2] text-[14px] leading-5 mt-4 font-semibold">date: &apos; 22-04-2023</p>
             </div>
           </div>
 
@@ -54,10 +54,10 @@ export default function MiracleCards() {
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
-              <p className="text-xl text-gray-500">Birth stories</p>
-              <h2 className={`${lora.className} text-xl md:text-2xl  text-[#263B3C] mt-2`}>Celebrating Little Miracles</h2>
-              <p className={`${inter.className}  mt-8 text-[#00000099] text-sm md:text-[20px] font-light`}>Every birth is a testament to the miracles that unfold within our walls. Whether it&apos;s the joyous arrival of a tiny explorer born in the comfort of a home.</p>
-              <p className=" text-gray-500 mt-4 font-semibold ">date: &apos;22-04-2023</p>
+              <p className="text-[14px] leading-5	 text-[#000000B2]">Birth stories</p>
+              <h2 className={`${lora.className} text-xl md:text-[25px] leading-7	  text-[#000000] mt-2`}>Celebrating Little Miracles</h2>
+              <p className={`${inter.className}  mt-8 text-[#00000099] text-sm md:text-[14px] leading-6`}>Every birth is a testament to the miracles that unfold within our walls. Whether it&apos;s the joyous arrival of a tiny explorer born in the comfort of a home.</p>
+              <p className=" text-[#000000B2] text-[14px] leading-5	 mt-4 font-semibold ">date: &apos;22-04-2023</p>
             </div>
           </div>
       </div>

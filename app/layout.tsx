@@ -3,20 +3,20 @@ import "./globals.css";
 import NavBar from "./Components/Navbar";
 import ContactNav from "./Components/ContactNav";
 import Footer from "./Components/Footer";
-import { Inter,Lora  } from "next/font/google";
+import { Lexend,Castoro  } from "next/font/google";
 
 
 
-export const inter = Inter({
+export const inter = Lexend({
   subsets: ["latin"],
-  display: "swap",
-  // variable: "--font-inter",
+  display: "swap",    
+  weight: ["300"],  
 });
 
-export const lora = Lora({
-  subsets: ["latin"],
-  display: "swap",
-  // variable: "--font-lora",
+export const lora = Castoro({
+  subsets: ["latin"],          
+  display: "swap",   
+  weight: ["400"],  
 });
 
 export default function RootLayout({
@@ -28,10 +28,16 @@ export default function RootLayout({
     <html lang="en" className={`${inter.className} ${lora.className}`}>
       <body>
         <div>
+          <div className="hidden md:block">
           <ContactNav />
+          </div>
+          <div>
           <NavBar />
+          </div>
         </div>
+        <div className="">
         {children}
+        </div>
         <Footer />
       </body>
     </html>

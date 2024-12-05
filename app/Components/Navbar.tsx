@@ -1,105 +1,117 @@
-import image from '@/public/images.png';
+"use client"; // This tells Next.js that the file is a client component
+
+import { useState, useEffect } from "react";
+import image from "@/public/images.png";
 import Link from "next/link";
-import Image from 'next/image'
-import BookModal from './BookModal/page';
-import {lora} from '@/app/layout';
+import Image from "next/image";
+import BookModal from "./BookModal/page";
+import { inter } from "@/app/layout";
+
+
 const NavBar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
 
-    const links=<>
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Adjust the threshold as needed
+    };
 
-    <li><Link href="/">Home</Link></li>
+    window.addEventListener("scroll", handleScroll);
 
-    <li><Link href="/about">About</Link></li>
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-    <li><Link href="/contacts">Contact</Link></li>
-
-    <li><Link href="/Program">Program</Link></li>
-
-    </>
-
-    return (
-
-        <div className="font-playfair-bold text-xl max-w-[80%] mx-auto  bg-[#FFFFFF]">
-
-            <div className="navbar bg-base-100">
-
-  <div className="navbar-start">
-
-    <div className="dropdown">
-
-      <div tabIndex={0} role="button" className="btn btn-ghost  lg:hidden">
-
-        <svg
-
-          xmlns="http://www.w3.org/2000/svg"
-
-          className="h-5 w-5"
-
-          fill="none"
-
-          viewBox="0 0 24 24"
-
-          stroke="currentColor">
-
-          <path
-
-            strokeLinecap="round"
-
-            strokeLinejoin="round"
-
-            strokeWidth="2"
-
-            d="M4 6h16M4 12h8m-8 6h16" />
-
-        </svg>
-
-      </div>
-
-      <ul
-
-        tabIndex={0}
-
-        className={` menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow `}>
-
-       {links}
-
-      </ul>
-    </div>
-
-    <Image
-      className="md:rounded-full md:h-[80px] md:w-[83px]"  alt="logo-image"
-      src={image}
-    />
-  </div>
-
-  <div className="navbar-end hidden lg:flex">
-
-    <ul className={` menu menu-horizontal px-1 `}>
-
-      {links}
-
-      <li className="bg-[#263B3C] text-white rounded-full">
-        {/* The button to open modal */}
-<label htmlFor="my_modal_6" className="">Book Now</label>
-
-{/* Put this part before </body> tag */}
-<input type="checkbox" id="my_modal_6" className="modal-toggle" />
-<div className="modal" role="dialog">
-  <div className="">
-      <BookModal></BookModal>
-  </div>
-</div>
+  const links = (
+    <>
+      <li>
+        <Link className={`${inter.className} text-[15px] leading-6 font-normal focus:font-bold focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-gray-300 `} href="/">Home</Link>
       </li>
-    </ul>
+      <li>
+        <Link className={`${inter.className} text-[15px] leading-6 font-normal focus:font-bold focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-gray-300`} href="/about">About</Link>
+      </li>
+      <li>
+        <Link className={`${inter.className} text-[15px] leading-6 font-normal focus:font-bold focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-gray-300`} href="/contacts">Contact</Link>
+      </li>
+      <li>
+        <Link className={`${inter.className} text-[15px] leading-6 font-normal focus:font-bold focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-gray-300`} href="/Program">Program</Link>
+      </li>
+    </>
+  );
 
-  </div>
+  return (
 
-</div>
-
+<div className="bg-[#FFFFFF] border border-white-700">
+  <div
+    className={`font-playfair-bold text-xl ${
+      isScrolled
+        ? "w-full bg-[#FFFFFF] shadow-lg fixed top-0 left-0 z-50 md:px-[270px]"
+        : "w-full md:max-w-[70%] bg-[#FFFFFF] mx-auto"
+    } transition-all duration-300 ${inter.className} font-bold ${
+      isScrolled ? "px-4" : ""
+    }`}
+  >
+      <div className="navbar bg-base-100">
+        <div className="navbar-start w-full">
+          <div className="flex flex-row-reverse justify-between w-full items-center">
+          <div className="dropdown">
+            
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-10 w-10"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabIndex={0}
+              className={`menu menu-lg dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-72 h-[1000vh]  -ml-[360px] p-2 
+                shadow ${inter.className} text-2xl font-semibold`}
+            >
+              {links}
+            </ul>
+          </div>
+          <Image
+            className="sm:h-[90px] w-[90px] rounded-full md:rounded-full md:h-[100px] md:w-[105px]"
+            alt="logo-image"
+            src={image}
+          />
+        </div>
         </div>
 
-    );
-};
+        <div className={`navbar-center hidden lg:flex ${inter.className} font-bold`}>
+          <ul className={`menu menu-horizontal px-1`}>
+            {links}
+            <li className="bg-[#263B3C] text-white rounded-full px-4 -mt-1 ml-8 font-bold">
+              {/* The button to open modal */}
+              <label htmlFor="my_modal_6" className={`${inter.className} text-[15px] leading-6 font-bold px-4 py-3`}>
+                Book Now
+              </label>
 
+              {/* Put this part before </body> tag */}
+              <input type="checkbox" id="my_modal_6" className="modal-toggle" />
+              <div className="modal" role="dialog">
+                <div className="">
+                  <BookModal></BookModal>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  );
+};
 
 export default NavBar;

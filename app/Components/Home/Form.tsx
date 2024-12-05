@@ -26,11 +26,11 @@ export default function Form() {
   }
 
   return (
-    <div className='md:w-10/12 mx-auto md:px-40 '>
+    <div className='md:w-full mx-auto '>
 
-    <div className="min-h-auto  bg-[#E5EEEE] flex items-center justify-center px-4 my-10 p-10 rounded-lg">
-      <div className="w-full max-w-4xl">
-        <h1 className={`${lora.className} text-[#1A3344] w-[400px] mx-auto text-2xl md:text-3xl font-semibold text-center mb-8`}>
+    <div className="min-h-auto bg-[#E5EEEE] flex items-center justify-center px-4 md:p-10 rounded-lg ">
+      <div className=" max-w-4xl w-full">
+        <h1 className={`${lora.className} text-[#263B3C] md:w-[500px] mx-auto text-2xl md:text-[40px]  leading-10	 text-center mb-8`}>
           Book Your Program and Secure Your Spot Today
         </h1>
         
@@ -42,7 +42,7 @@ export default function Form() {
               placeholder="Name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-[#2D5A27] focus:border-transparent placeholder-gray-400"
+              className="w-full px-4 py-3 rounded-lg border border-[#000000] bg-[#F7FAFA] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#2D5A27] focus:border-transparent placeholder-gray-400"
               required
             />
             
@@ -52,7 +52,7 @@ export default function Form() {
               placeholder="Phone number"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-[#2D5A27] focus:border-transparent placeholder-gray-400"
+              className="w-full px-4 py-3 rounded-lg border border-[#000000] bg-[#F7FAFA] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#2D5A27] focus:border-transparent placeholder-gray-400"
               required
             />
             
@@ -62,7 +62,7 @@ export default function Form() {
               placeholder="Email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-[#2D5A27] focus:border-transparent placeholder-gray-400"
+              className="w-full px-4 py-3 rounded-lg border border-[#000000] bg-[#F7FAFA] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#2D5A27] focus:border-transparent placeholder-gray-400"
               required
             />
           </div>
@@ -73,7 +73,7 @@ export default function Form() {
                 name="program"
                 value={formData.program}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-[#2D5A27] focus:border-transparent text-gray-600"
+                className="w-full px-4 py-3 rounded-lg border border-[#000000] bg-[#F7FAFA] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#2D5A27] focus:border-transparent placeholder-gray-400"
                 required
               >
                 <option value="">Select program</option>
@@ -85,7 +85,7 @@ export default function Form() {
             
             <button
               type="submit"
-              className="w-full bg-[#2D5A27] text-white font-medium py-3 px-6 rounded-lg hover:bg-[#234620] transition-colors duration-200 shadow-sm"
+              className="w-full bg-[#263B3C] text-white font-medium py-3 px-6 rounded-lg hover:bg-[#234620] transition-colors duration-200 shadow-sm"
             >
               Book Now
             </button>

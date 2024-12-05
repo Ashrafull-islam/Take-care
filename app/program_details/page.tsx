@@ -16,7 +16,7 @@ export default function BirthProgram() {
     <div>
     {/* bg image section  */}
     <div>
-    <div className="h-[300px] w-full relative">
+    <div className="h-[290px] w-full relative">
   <Image
     alt="Contact-img"
     src={details1}
@@ -26,7 +26,7 @@ export default function BirthProgram() {
     style={{ objectFit: 'cover' }} 
   />
 </div>
-<div className="absolute inset-0 mt-96 md:mt-64 text-[#263B3C] w-[80%]   mx-auto">
+<div className="absolute inset-0 mt-96 md:mt-64 text-[#263B3C] w-[70%] border bg-red-600  mx-auto">
         <div className="max-w-[950px] -mt-2">
         <h1 className={`${lora.className} text-center md:text-start text-3xl md:text-7xl p-3 font-light `}>Program Details</h1>
         <div className='flex gap-2 justify-center md:justify-start md:p-6'>

@@ -35,32 +35,59 @@ export default function Faq() {
   }
 
   return (
-    <section className="py-12 bg-[#E5EEEE] text-[#263B3C]">
-      <div className="container mx-auto px-4 ">
-        <h2 className={`${lora.className} text-3xl  font-bold text-center mb-8 text-[#263B3C] `}>FAQ</h2>
-        <div className="max-w-7xl mx-auto p-4 ">
-          {faqs.map((faq, index) => (
-            <div key={index} className=" mb-4 border border-black rounded-lg ">
-              <button
-                className="flex  justify-between border  items-center w-full text-left p-4 bg-[#E5EEEE] rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
-                onClick={() => toggleFaq(index)}
+    <section className="py-20 bg-[#E5EEEE] text-[#263B3C]">
+    <div className="md:container md:mx-auto md:px-4  ">
+      <h2
+        className={`${lora.className} text-5xl font-bold text-center mb-6 md:mb-8 text-[#263B3C] `}
+      >
+        FAQ
+      </h2>
+      <div className="max-w-7xl mx-auto p-4 ">
+        {faqs.map((faq, index) => (
+          <div key={index} className='md:mb-9'>
+          <div
+            key={index}
+            id="changed"
+            className={`mb-4 rounded-2xl ${
+              openIndex === index ? "bg-[#263B3C]" : "bg-white"
+            }`}
+          >
+            <button
+              className="flex justify-between border items-center w-full text-left p-4 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-1000"
+              onClick={() => toggleFaq(index)}
+              id='dropdown'
+            >
+              <span
+                className={`${lora.className} ${openIndex === index ? "bg-[#263B3C]" : "bg-white"} ${openIndex === index ? 'text-white':'text[#263B3C]'} text-lg font-semibold w-full  text-[24px] leading-9 text-[#263B3C]`}
               >
-                <span className={`${lora.className} text-lg font-semibold w-full  text-[#263B3C]`}>{faq.question}</span>
-                {openIndex === index ? (
-                  <ChevronUp className="h-5 w-5 text-[#263B3C] " />
-                ) : (
-                  <ChevronDown className="h-5 w-5 text-[#263B3C]" />
-                )}
-              </button>
-              {openIndex === index && (
-                <div className="mt-2 p-4 text-[#263B3C] w-full bg-white rounded-lg shadow-md">
-                  <p className={`${inter.className} text-[#263B3C] opacity-80`}>{faq.answer}</p>
-                </div>
+                {faq.question}
+              </span>
+              {openIndex === index ? (
+                <ChevronUp className="h-5 w-5 text-white" />
+              ) : (
+                <ChevronDown className="h-5 w-5 text-[#263B3C]" />
               )}
+            </button>
+           
+          </div>
+      {/* create a dynamic text there  */}
+      <div className='mb-5 -mt-5'> 
+            {openIndex === index && (
+              <div className="mt-2 p-4 text-[#263B3C] w-full bg-white rounded-lg shadow-md">
+                <p
+                  className={`${inter.className} text-[#263B3C] opacity-80 my-5`}
+                >
+                  {faq.answer}
+                </p>
+              </div>
+            )}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </section>
+
+    </div>
+  </section>
+  
   )
 }

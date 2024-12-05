@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { lora } from "./app/layout";
 
 export default {
   content: [
@@ -9,9 +10,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)'], // Inter for sans-serif
-        serif: ['var(--font-lora)'], // Lora for serif
-      },
+        inter: ['var(--font-lexend)', "sans-serif"],
+        lora: ['var(--font-castoro)', "serif"],
+        },
     },
   },
   plugins: [require('daisyui')],

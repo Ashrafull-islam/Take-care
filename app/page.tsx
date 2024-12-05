@@ -13,7 +13,7 @@ export default function Home(){
        {/* meet faq and form  */}
        <div>
        <FaQHome></FaQHome>
-       <div className="md:-mt-56"><Form></Form></div>
+       <div className="md:-mt-[270px] md:w-[70%] mx-auto"><Form></Form></div>
        </div>
 
     </div>

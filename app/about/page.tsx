@@ -6,6 +6,7 @@ import {inter} from '@/app/layout';
 import bgAbout from '@/public/aboutbg.png';
 import Link from 'next/link';
 import AboutCard from '../Components/About/AboutCards';
+import BgHome from '@/public/home.png';
 import type { Metadata } from 'next';
 export const metadata:Metadata={
   title:'About page'
@@ -13,19 +14,31 @@ export const metadata:Metadata={
 export default function Page(){
     return (
         <>
-    <div>
-    <div className=''>       
-    <Image
-      alt="Mountains"
-      src={bgAbout}
-      placeholder="blur"
-      quality={100}
-    />
-        </div>
-        <div className="absolute inset-0 mt-80 text-[#263B3C] w-[80%]   mx-auto ">
-        <div className="max-w-[950px] -mt-2">
-        <h1 className={`${lora.className} text-2xl md:text-7xl p-3 font-light`}>About us</h1>
-        <div className='flex gap-2 '>
+        <div className="relative w-full h-[38vh]  md:h-[600px]">
+      {/* Background Image */}
+      <div className="relative h-[300px] md:h-[450px]">
+  <Image
+    alt="Mountains"
+    src={bgAbout}
+    placeholder="blur"
+    quality={100}
+    fill
+    style={{
+      objectFit: "cover",
+      opacity: 1,
+    }}
+  />
+</div>
+
+
+      
+
+
+      {/* Text Overlay */}
+      <div className="absolute inset-0 md:mt-32 text-[#263B3C] md:w-[70%]  md:mx-auto">
+      <div className="md:max-w-[950px] mt-20 md:mt-4  flex flex-col justify-center">
+        <h1 className={`${lora.className} text-6xl md:text-[64px] p-3 font-light leading-10	`}>About us</h1>
+        <div className='flex p-3 md:p-0 text-[16px] leading-6'>
             <p className={`${inter.className} flex gap-2 items-center md:p-6`}>
             <IoHomeSharp />
             <Link href="/">Home</Link>
@@ -36,10 +49,10 @@ export default function Page(){
             </p>
         </div>
         </div>
+
       </div>
-        </div>
-        {/* About card  */}
-        <div>
+    </div>
+        <div className='md:w-[70%] mx-auto'>
         <AboutCard></AboutCard> 
         </div>
         </>

@@ -14,22 +14,25 @@ export const metadata:Metadata={
 export default function Page(){
     return (
         <div>
-            <div className="h-[300px] w-full relative">
+             <div className="relative h-[300px] md:h-[450px]">
   <Image
-    alt="Contact-img"
+    alt="Mountains"
     src={Contact}
-    placeholder="blur" 
-    quality={100} 
-    fill 
-    style={{ objectFit: 'cover' }} 
+    placeholder="blur"
+    quality={100}
+    fill
+    style={{
+      objectFit: "cover",
+      opacity: 1,
+    }}
   />
 </div>
 
-<div className="absolute inset-0 mt-96 md:mt-64 text-[#263B3C] w-[80%]   mx-auto ">
-        <div className="max-w-[950px] -mt-2">
-        <h1 className={`${lora.className} text-center md:text-start text-3xl md:text-7xl p-3 font-light `}>Contact</h1>
-        <div className='flex gap-2 justify-center md:justify-start md:p-6'>
-            <p className={`${inter.className} flex gap-2 items-center`}>
+<div className="absolute inset-0 md:mt-80 text-[#263B3C] md:w-[70%]  md:mx-auto ">
+        <div className="md:max-w-[950px] mt-48 md:mt-4  flex flex-col justify-center">
+        <h1 className={`${lora.className} text-6xl text-[#000000] md:text-[64px] p-3 font-light leading-10	`}>Contact</h1>
+        <div className='flex p-3 md:p-0 text-[16px] text-[#263B3C] leading-6'>
+            <p className={`${inter.className} flex gap-2 items-center md:p-6`}>
             <IoHomeSharp />
             <Link href="/">Home</Link>
             </p>
@@ -41,14 +44,14 @@ export default function Page(){
         </div>
       </div>
       {/* text  */}
-      <div className="md:w-10/12  mx-auto md:my-1 md:mt-20">
+      <div className=" mx-auto md:my-1 md:mt-20 md:w-[70%]">
       <div className="md:h-[150px] md:w-[650px] text-[#263B3C] text-center md:text-start">
         <h2 className={`${lora.className} text-center md:text-start text-3xl md:text-5xl p-3 font-light `}>Let us know how can help</h2>
         <p className={`${inter.className} flex gap-2 items-center p-3 text-[#263B3C]`}>Your inquiries are our priority, and we look forward to hearing from you. Connect with us today and let&apos;s make every interaclassNament!</p>
       </div>
       </div>
       {/* form and map  */}
-        <div>
+        <div className="my-32">
             <ConFormMap></ConFormMap>
         </div>
 
