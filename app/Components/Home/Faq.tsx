@@ -42,9 +42,9 @@ export default function Faq() {
       >
         FAQ
       </h2>
-      <div className="max-w-7xl mx-auto p-4 ">
+      <div className="max-w-7xl mx-auto p-4">
         {faqs.map((faq, index) => (
-          <div key={index} className='md:mb-9'>
+          <div key={index} className=' mb-9'>
           <div
             key={index}
             id="changed"
@@ -58,7 +58,7 @@ export default function Faq() {
               id='dropdown'
             >
               <span
-                className={`${lora.className} ${openIndex === index ? "bg-[#263B3C]" : "bg-white"} ${openIndex === index ? 'text-white':'text[#263B3C]'} text-lg font-semibold w-full  text-[24px] leading-9 text-[#263B3C]`}
+                className={`${lora.className} ${openIndex === index ? "bg-[#263B3C]" : "bg-white"} ${openIndex === index ? 'text-white':'text[#263B3C]'} text-[16px] font-semibold w-full  md:text-[24px] leading-9 text-[#263B3C]`}
               >
                 {faq.question}
               </span>
