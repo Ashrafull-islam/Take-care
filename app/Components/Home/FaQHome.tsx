@@ -57,9 +57,11 @@ export default function FaQHome() {
 
         </div>
         {/* faq section  */}
+        <div className='md:px-24'>
         <Faq></Faq>
+        </div>
         {/* card section  */}
-        <div className='w-[91%] mx-auto'>
+        <div className='w-[91%] mx-auto md:px-5'>
         <CardForm></CardForm>
         </div>
       </div>

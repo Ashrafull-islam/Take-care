@@ -1,13 +1,14 @@
 import Image from "next/image";
-import footerimg from "@/public/footer.png";
 import { FaSquareInstagram } from "react-icons/fa6";
 import React from "react";
 import Marquee from "react-fast-marquee";
 import marquee1 from "@/public/marquee2.png";
+import image from "@/public/navbar.png";
 import marquee2 from "@/public/marquee3.png";
 import marquee3 from "@/public/marquee4.png";
 import marquee4 from "@/public/marquee 5.png";
 import marquee5 from "@/public/marquee.png";
+import { inter } from "../layout";
 
 export default function Footer() {
   return (
@@ -58,11 +59,11 @@ export default function Footer() {
 
       {/* Footer Section */}
       <div className="bg-[#263B3C]">
-        <footer className="w-11/12 sm:w-[85%] mx-auto bg-[#263B3C] text-gray-200 py-8 sm:py-10 md:flex md:flex-row md:justify-between gap-8">
+        <footer className="w-11/12 sm:w-[70%] mx-auto bg-[#263B3C] text-gray-200 py-8 sm:py-10 md:flex md:flex-row md:justify-between gap-8">
           {/* Logo and Description */}
           <div className="flex flex-col md:flex-row items-center sm:items-start text-center sm:text-left gap-4">
             <Image
-              src={footerimg}
+              src={image}
               alt="Footer Logo"
               placeholder="blur"
               className="rounded-full w-16 h-16 md:w-20 md:h-20"
@@ -75,20 +76,18 @@ export default function Footer() {
           </div>
 
           {/* Subscription Form */}
-          <div className="flex flex-col items-center sm:items-start w-full sm:w-auto p-4 rounded-lg bg-white border shadow-md">
+          <div className=" flex-col items-center h-[60px] sm:items-start w-full sm:w-auto p-1 rounded-lg bg-white border shadow-md">
             <div>
-              <fieldset className="form-control w-full max-w-xs">
-                <div className="join flex flex-col sm:flex-row gap-2">
+            <div className=" flex sm:flex-row gap-2 text-[#000000] text-[20px]">
                   <input
                     type="text"
                     placeholder="Enter Email Address"
-                    className="input px-4 py-2 rounded-md border border-gray-300 w-full"
+                    className="input rounded-md w-full"
                   />
-                  <button className="btn px-6 py-2 bg-[#263B3C] text-white rounded-md">
+                  <button className={`${inter.className} btn px-6 py-2 bg-[#263B3C] rounded-xl text-[18px] text-[#FFFFFF] leading-6`}>
                     Subscribe
                   </button>
                 </div>
-              </fieldset>
             </div>
           </div>
 

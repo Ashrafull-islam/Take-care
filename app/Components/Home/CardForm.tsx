@@ -11,7 +11,7 @@ export default function CardForm() {
     <div className="min-h-auto bg-[#E5EEEE] px-4 md:mb-32 ">
       {/* Features Section */}
       <div className="container mx-auto ">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {/* Know Your Options */}
           <div className="rounded-lg p-2 md:p-0 ">
             <div className="flex flex-col items-center text-center">

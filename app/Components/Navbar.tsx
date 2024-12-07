@@ -1,7 +1,7 @@
 "use client"; // This tells Next.js that the file is a client component
 
 import { useState, useEffect } from "react";
-import image from "@/public/images.png";
+import image from "@/public/navbar.png";
 import Link from "next/link";
 import Image from "next/image";
 import BookModal from "./BookModal/page";
@@ -42,18 +42,18 @@ const NavBar = () => {
 
   return (
 
-<div className="bg-[#FFFFFF] border border-white-700">
+<div className="bg-[#FFFFFF] ">
   <div
     className={`font-playfair-bold text-xl ${
       isScrolled
-        ? "w-full bg-[#FFFFFF] shadow-lg fixed top-0 left-0 z-50 md:px-[270px]"
-        : "w-full md:max-w-[70%] bg-[#FFFFFF] mx-auto"
+        ? "w-full bg-[#FFFFFF] shadow-lg fixed top-0 left-0 z-50 md:px-[258px]"
+        : "w-full md:max-w-[72%] bg-[#FFFFFF] mx-auto"
     } transition-all duration-300 ${inter.className} font-bold ${
       isScrolled ? "px-4" : ""
     }`}
   >
-      <div className="navbar bg-base-100">
-        <div className="navbar-start w-full">
+      <div className="navbar bg-base-100 ">
+        <div className="navbar-start w-full ">
           <div className="flex flex-row-reverse justify-between w-full items-center">
           <div className="dropdown">
             
@@ -82,7 +82,7 @@ const NavBar = () => {
             </ul>
           </div>
           <Image
-            className="sm:h-[90px] w-[90px] rounded-full md:rounded-full md:h-[100px] md:w-[105px]"
+            className="sm:h-[83px] w-[82px] rounded-full md:rounded-full md:h-[83px] md:w-[82px]"
             alt="logo-image"
             src={image}
           />
