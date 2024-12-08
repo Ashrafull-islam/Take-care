@@ -15,44 +15,39 @@ export default function Footer() {
     <div className="mt-24">
       {/* Marquee Section */}
       <div className="mt-10">
-        <Marquee gradient={false} speed={50} className="bg-gray-100 py-4">
-          <div className="flex gap-8 items-center">
+        <Marquee gradient={false} speed={40} className="bg-gray-100">
+          <div className="flex items-center">
             <Image
               src={marquee1}
               alt="Image 1"
               width={300}
               height={300}
               priority
-              className="rounded-lg w-auto h-auto"
-            />
+              className="w-[360px] h-[270px]"     />
             <Image
               src={marquee2}
               alt="Image 2"
               width={300}
               height={300}
-              className="rounded-lg w-auto h-auto"
-            />
+              className="w-[360px] h-[270px]"     />
             <Image
               src={marquee3}
               alt="Image 3"
               width={300}
               height={300}
-              className="rounded-lg w-auto h-auto"
-            />
+              className="w-[360px] h-[270px]"     />
             <Image
               src={marquee4}
               alt="Image 4"
               width={300}
               height={300}
-              className="rounded-lg w-auto h-auto"
-            />
+              className="w-[360px] h-[270px]"     />
             <Image
               src={marquee5}
               alt="Image 5"
               width={300}
               height={300}
-              className="rounded-lg w-auto h-auto"
-            />
+              className="w-[360px] h-[270px]"     />
           </div>
         </Marquee>
       </div>

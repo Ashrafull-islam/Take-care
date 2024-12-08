@@ -26,31 +26,29 @@ const NavBar = () => {
   const links = (
     <>
       <li>
-        <Link className={`${inter.className} text-[15px] leading-6 font-normal focus:font-bold focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-gray-300 `} href="/">Home</Link>
+        <Link className={`${inter.className} text-[15px] leading-6 font-normal `} href="/">Home</Link>
       </li>
       <li>
-        <Link className={`${inter.className} text-[15px] leading-6 font-normal focus:font-bold focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-gray-300`} href="/about">About</Link>
+        <Link className={`${inter.className} text-[15px] leading-6 font-normal`} href="/about">About</Link>
       </li>
       <li>
-        <Link className={`${inter.className} text-[15px] leading-6 font-normal focus:font-bold focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-gray-300`} href="/contacts">Contact</Link>
+        <Link className={`${inter.className} text-[15px] leading-6 font-normal`} href="/contacts">Contact</Link>
       </li>
       <li>
-        <Link className={`${inter.className} text-[15px] leading-6 font-normal focus:font-bold focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-gray-300`} href="/Program">Program</Link>
+        <Link className={`${inter.className} text-[15px] leading-6 font-normal`} href="/Program">Program</Link>
       </li>
     </>
   );
 
   return (
 
-<div className="bg-[#FFFFFF] ">
+<div className="bg-[#FFFFFF] md:w-[72%] mx-auto">
   <div
     className={`font-playfair-bold text-xl ${
       isScrolled
         ? "w-full bg-[#FFFFFF] shadow-lg fixed top-0 left-0 z-50 md:px-[258px]"
-        : "w-full md:max-w-[72%] bg-[#FFFFFF] mx-auto"
-    } transition-all duration-300 ${inter.className} font-bold ${
-      isScrolled ? "px-4" : ""
-    }`}
+        : "shadow-none"
+    } ${inter.className}`}
   >
       <div className="navbar bg-base-100 ">
         <div className="navbar-start w-full ">
