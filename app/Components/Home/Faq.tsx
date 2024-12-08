@@ -42,18 +42,18 @@ export default function Faq() {
       >
         FAQ
       </h2>
-      <div className="max-w-7xl mx-auto p-4">
+      <div className="max-w-7xl mx-auto p-4 rounded-2xl">
         {faqs.map((faq, index) => (
-          <div key={index} className=' mb-9'>
+          <div key={index} className=' mb-9 rounded-2xl'>
           <div
             key={index}
             id="changed"
             className={`mb-4 rounded-2xl ${
-              openIndex === index ? "bg-[#263B3C]" : "bg-white"
+              openIndex === index ? "bg-[#263B3C] rounded-b-none rounded-2xl" : "bg-white"
             }`}
           >
             <button
-              className="flex justify-between border items-center w-full text-left p-4 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-1000"
+              className="flex justify-between  rounded-2xl items-center w-full text-left p-4 shadow-sm hover:shadow-lg transition-shadow duration-1000"
               onClick={() => toggleFaq(index)}
               id='dropdown'
             >
@@ -73,7 +73,7 @@ export default function Faq() {
       {/* create a dynamic text there  */}
       <div className='mb-5 -mt-5'> 
             {openIndex === index && (
-              <div className="mt-2 p-4 text-[#263B3C] w-full bg-white rounded-lg shadow-md">
+              <div className="mt-2 p-4 text-[#263B3C] w-full bg-white rounded-lg rounded-t-none shadow-md">
                 <p
                   className={`${inter.className} text-[#263B3C] opacity-80 my-5`}
                 >

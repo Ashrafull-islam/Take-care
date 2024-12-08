@@ -10,10 +10,10 @@ export default function FaQHome() {
   return (
     <div className="bg-[#E5EEEE] text-[#263B3C]">
       <div className="md:w-10/12 mx-auto">
-        <div className="md:flex md:flex-row-reverse md:p-28 md:gap-10 justify-center md:h-[834px]">
+        <div className="md:flex md:flex-row-reverse md:p-28 md:gap-10 justify-center  md:h-[834px]">
 
           {/* Text Section */}
-          <div>
+          <div className=' md:h-auto'>
             <h2  className={`${lora.className} text-2xl p-4  mb-8 text-[#263B3C] text-start my-2 md:my-0 md:text-[48px] leading-9`}>Meet Your Practitioner</h2>
             <p className={`${inter.className} p-4 md:p-0 my-0 md:my-6 text-[14px] md:text-[18px] opacity-70 leading-8	`}>
               As a mother of four and a Hypnobirthing Australia certified practitioner, I've
@@ -22,7 +22,7 @@ export default function FaQHome() {
               knowledge and support needed for a fulfilling birth, drawing from my own diverse
               experiences across the spectrum of childbirth.
             </p>
-            <p className={`${inter.className} p-4 md:p-0 my-1 md:my-6 text-[14px] md:text-[18px] opacity-70`}>
+            <p className={`${inter.className} p-4 md:p-0 my-1 md:my-4 text-[14px] md:text-[18px] opacity-70`}>
               I leverage my skills and experience to make Hypnobirthing accessible to all
               women, aiming to empower them to understand and embrace the principles of the
               Positive Birth Program.
@@ -46,14 +46,14 @@ export default function FaQHome() {
       
           </div>
          {/* Image Container */}
-         <div className="p-3 my-2 md:relative md:w-[3500px] md:h-[880px] md:mx-auto">
+         {/* <div className="p-3 my-2 md:relative md:w-auto md:h-auto md:mx-auto border"> */}
             <Image
               className="rounded-3xl"
               src={booksLady}
               alt="Picture of the author"
               style={{ objectFit: "cover" }}
             />
-          </div>
+          {/* </div> */}
 
         </div>
         {/* faq section  */}

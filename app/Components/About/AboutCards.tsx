@@ -18,21 +18,21 @@ export default function AboutCard(){
             {/* Cards section  */}
             <div className="md:mt-20">
             {/* card 1 */}
-            <div className="md:flex gap-3 items-center justify-center p-2 md:p-0 md:my-14 my-8">
+            <div className="md:flex gap-3 items-center  p-2 md:p-0 md:my-14 my-8">
 
     <Image
       src={card1}
       alt="Picture of the author"
-      width={550}
+      width={600}
       height={345}
     />
-  <div className="flex-1 ">
-    <div className='h-[250px] md:px-4 '>
-    <h2 className={`${lora.className} text-2xl md:text-[36px] leading-9	 text-[#263B3C]`}>
+  <div className="flex-1">
+    <div className='h-[250px] md:px-4'>
+    <h2 className={`${lora.className} text-2xl md:text-[32px]	 text-[#263B3C] leading-10`}>
       Our Mission: A Sanctuary for Mothers
     </h2>
     <p
-      className={`${inter.className} mt-6 text-[#00000099] text-sm md:text-[20px] leading-8 `}
+      className={`${inter.className} mt-6 text-[#00000099] text-sm md:text-[18px] leading-8 `}
     >
       Sojourn &apos;s mission transcends traditional birthing education, aiming to
       be a sanctuary for mothers at any stage of their journey. From the
@@ -47,15 +47,15 @@ export default function AboutCard(){
 
         {/* Card 2  */}
                 
-                    <div className="flex-row-reverse md:flex-row md:flex gap-3 items-center justify-center  p-2 md:p-0 md:my-14">
+                    <div className="flex-row-reverse md:flex-row md:flex gap-3 items-center justify-center  p-2 md:p-0 md:my-20">
                     <div className="flex-1  flex ">
     <div className='h-[250px] '>
-    <h2 className={`${lora.className} text-2xl md:text-[36px] leading-9 text-[#263B3C] `}>
+    <h2 className={`${lora.className} text-2xl md:text-[32px] leading-10 text-[#263B3C] `}>
     A Mother&apos;
     s Insight
     </h2>
     <p
-      className={`${inter.className} md:mt-6 mt-3 text-[#00000099] text-sm md:text-[20px] leading-8`}
+      className={`${inter.className} md:mt-6 mt-3 text-[#00000099] text-sm md:text-[18px] leading-8`}
     >
      Zena, a mother of four and a HypnoBirthing Australia certified practitioner, brings her personal journey and professional expertise to Sojourn. With a rich background in social sciences and as a NAATI accredited Arabic interpclassNamena&apos;s approach is both inclusive and empowering.
     </p>
@@ -67,7 +67,7 @@ export default function AboutCard(){
     src={card2}
     alt="Picture of the author"
     width={600}
-    height={343}
+    height={345}
     className="rounded-lg"
   />
 
@@ -79,16 +79,16 @@ export default function AboutCard(){
     <Image
       src={card3}
       alt="Picture of the author"
-      width={550}
+      width={600}
       height={345}
     />
   <div className="flex-1  flex ">
     <div className='h-[250px] md:px-4 '>
-    <h2 className={`${lora.className} text-2xl md:text-[36px] leading-9 text-[#263B3C]`}>
+    <h2 className={`${lora.className} text-2xl md:text-[32px] leading-10 text-[#263B3C]`}>
     With You at Every Step of Motherhood
     </h2>
     <p
-      className={`${inter.className} mt-6 text-[#00000099] text-sm md:text-[20px] leading-8`}
+      className={`${inter.className} mt-6 text-[#00000099] text-sm md:text-[18px] leading-8`}
     >
       Sojourn envisions a world where every mother feels empowered, supported, and understood from pregnancy to parenting. We&apos;re growing to become a holistic hub for mothers, offering services that cater to every phase of motherhood. Join us on a journey of empowerment and support, tailored to meet the diverse needs of every mum.
     </p>
@@ -98,14 +98,14 @@ export default function AboutCard(){
 
 
         {/* Card 4  */}
-                    <div className="md:flex gap-3 items-center justify-center p-4 md:p-0  md:my-14 my-2">
+                    <div className="md:flex gap-3 items-center justify-center p-4 md:p-0  md:my-20 my-2">
                     <div className="flex-1  flex ">
     <div className='h-[250px] md:px-4 '>
-    <h2 className={`${lora.className} text-2xl md:text-[36px] leading-9 text-[#263B3C]`}>
+    <h2 className={`${lora.className} text-2xl md:text-[32px] leading-10 text-[#263B3C]`}>
     What to expect from our programs
     </h2>
     <p
-      className={`${inter.className} mt-6 text-[#00000099] text-sm md:text-[20px] leading-8 `}
+      className={`${inter.className} mt-6 text-[#00000099] text-sm md:text-[18px] leading-8 `}
     >
         The Sojourn Positive Birth Program includes 12 hours of personalised tuition, a comprehensive Positive Birth Program Booklet, refreshments for comfort, and extensive online resources, practice videos, and more. Participants also benefit from ongoing support from their dedicated practitioner, ensuring a well-supported journey to parenthood.
     </p>
@@ -115,7 +115,7 @@ export default function AboutCard(){
       src={card4}
       alt="Picture of the author"
       width={600}
-      height={343}
+      height={345}
     />
 </div>
         </div>
