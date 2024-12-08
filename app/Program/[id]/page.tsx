@@ -9,17 +9,23 @@ import Link from "next/link";
 import { PiGreaterThan } from "react-icons/pi";
 import { IoHomeSharp } from "react-icons/io5";
 import hashi from "@/public/hashi.png"
-interface Params {
-  id: string;
-}
 
-export default function Page({ params }: { params: Params }) {
-  const { id } = params; // Extract the id from params
+
+
+export default async  function Page({
+  params,
+}: {
+  params:Promise<{id:string}>
+}) {
+  const id = (await params).id;
+
   const cardDetails = fakeData.find((card) => card.id.toString() === id);
-const {description,next_session,start_time,location,price,program_includes,title}=cardDetails;
+
   if (!cardDetails) {
     return <h2>Card not found!</h2>;
   }
+
+  const { description, title } = cardDetails;
 
   return (
     <div>
