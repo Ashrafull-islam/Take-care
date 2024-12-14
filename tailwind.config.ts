@@ -1,19 +1,25 @@
+import daisyui from "daisyui";
 import type { Config } from "tailwindcss";
-import { lora } from "./app/layout";
 
-export default {
+const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class", // Enable class-based dark mode
   theme: {
     extend: {
       fontFamily: {
-        inter: ['var(--font-lexend)', "sans-serif"],
-        lora: ['var(--font-castoro)', "serif"],
-        },
+        inter: ["var(--font-lexend)", "sans-serif"],
+        lora: ["var(--font-castoro)", "serif"],
+      },
     },
   },
-  plugins: [require('daisyui')],
-} satisfies Config;
+  plugins: [daisyui],
+  daisyui: {
+    themes: ['light'], // Include both light and dark themes
+  },
+};
+
+export default config;

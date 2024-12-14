@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { FaSquareInstagram } from "react-icons/fa6";
-import React from "react";
 import Marquee from "react-fast-marquee";
 import marquee1 from "@/public/marquee2.png";
 import image from "@/public/navbar.png";
@@ -14,47 +13,25 @@ export default function Footer() {
   return (
     <div className="mt-24">
       {/* Marquee Section */}
-      <div className="mt-10">
-        <Marquee gradient={false} speed={40} className="bg-gray-100">
-          <div className="flex items-center">
+      <Marquee gradient={false} speed={40} className="bg-gray-100 mt-10">
+        <div className="flex items-center">
+          {[marquee1, marquee2, marquee3, marquee4, marquee5].map((src, idx) => (
             <Image
-              src={marquee1}
-              alt="Image 1"
+              key={idx}
+              src={src}
+              alt={`Image ${idx + 1}`}
               width={300}
               height={300}
-              priority
-              className="w-[360px] h-[270px]"     />
-            <Image
-              src={marquee2}
-              alt="Image 2"
-              width={300}
-              height={300}
-              className="w-[360px] h-[270px]"     />
-            <Image
-              src={marquee3}
-              alt="Image 3"
-              width={300}
-              height={300}
-              className="w-[360px] h-[270px]"     />
-            <Image
-              src={marquee4}
-              alt="Image 4"
-              width={300}
-              height={300}
-              className="w-[360px] h-[270px]"     />
-            <Image
-              src={marquee5}
-              alt="Image 5"
-              width={300}
-              height={300}
-              className="w-[360px] h-[270px]"     />
-          </div>
-        </Marquee>
-      </div>
+              className="w-[360px] h-[270px]"
+              priority={idx === 0} // Give priority to the first image
+            />
+          ))}
+        </div>
+      </Marquee>
 
       {/* Footer Section */}
-      <div className="bg-[#263B3C]">
-        <footer className="w-11/12 sm:w-[70%] mx-auto bg-[#263B3C] text-gray-200 py-8 sm:py-10 md:flex md:flex-row md:justify-between gap-8">
+      <div className="bg-[#263B3C] text-gray-200">
+        <footer className="w-11/12 sm:w-[70%] mx-auto py-8 sm:py-10 flex flex-col md:flex-row md:justify-between gap-8">
           {/* Logo and Description */}
           <div className="flex flex-col md:flex-row items-center sm:items-start text-center sm:text-left gap-4">
             <Image
@@ -71,32 +48,30 @@ export default function Footer() {
           </div>
 
           {/* Subscription Form */}
-          <div className=" flex-col items-center h-[60px] sm:items-start w-full sm:w-auto p-1 rounded-lg bg-white border shadow-md">
-            <div>
-            <div className=" flex sm:flex-row gap-2 text-[#000000] text-[20px]">
-                  <input
-                    type="text"
-                    placeholder="Enter Email Address"
-                    className="input rounded-md w-full"
-                  />
-                  <button className={`${inter.className} btn px-6 py-2 bg-[#263B3C] rounded-xl text-[18px] text-[#FFFFFF] leading-6`}>
-                    Subscribe
-                  </button>
-                </div>
+          <div className="flex flex-col h-[60px] w-full sm:w-auto p-1 bg-white border shadow-md rounded-lg">
+            <div className="flex sm:flex-row gap-2 text-black text-[20px]">
+              <input
+                type="text"
+                placeholder="Enter Email Address"
+                className="input w-full rounded-md"
+              />
+              <button className={`${inter.className} px-6 py-2 bg-[#263B3C] text-white rounded-xl text-[18px]`}>
+                Subscribe
+              </button>
             </div>
           </div>
 
           {/* Social Media Links */}
-          <div className="flex flex-col justify-center items-center sm:items-start text-center sm:text-left gap-2">
+          <div className="flex flex-col items-center sm:items-start text-center sm:text-left gap-2">
             <p className="font-semibold text-lg">Follow Us</p>
             <div className="flex items-center gap-2">
-              <a href="/" className="hover:underline">
-                Instagram
-              </a>
+              <a href="/" className="hover:underline">Instagram</a>
               <FaSquareInstagram className="text-xl" />
             </div>
           </div>
         </footer>
+
+        {/* Footer Bottom */}
         <div className="text-white mt-10">
           <hr className="w-[90%] sm:w-[70%] mx-auto border-gray-200" />
           <p className="text-center mt-6 opacity-80 font-thin text-sm">
